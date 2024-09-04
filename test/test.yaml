@@ -1,0 +1,40 @@
+# SPDX-FileCopyrightText: 2024 Eduardo Javier Alvarado Aarón <eduardo.javier.alvarado.aaron@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+indent:
+  indent:
+  - before: <tag> test \" </tag> # XML
+  - after: <tag> test \" </tag> # XML label
+  - after: <tag> test \" </tag>
+  
+  - before-single: '<tag> test \" </tag>' # XML
+  - after-single: '<tag> test \" </tag>' # XML
+  - 'single-after': '<tag> test \" </tag>' # XML
+  - "double-after": '<tag> test \" </tag>'
+  
+  - before-double: "<tag> test \" </tag>" # XML
+  - after-double: "<tag> test \" </tag>" # XML
+  - 'single-after': "<tag> test \" </tag>" # XML
+  - "double-after": "<tag> test \" </tag>"
+  
+  - before-newline:
+      <tag> test \" </tag>
+      <tag> test \" </tag>
+  - after-newline: # XML
+      <tag> test \" </tag>
+      <tag> test \" </tag>
+  
+  - before-folded: >-
+      <tag> test \" </tag>
+      <tag> test \" </tag>
+  - after-folded: >- # XML
+      <tag> test \" </tag>
+      <tag> test \" </tag>
+  
+  - before-literal: |- # label
+      <tag> test \" </tag>
+      <tag> test \" </tag>
+  - after-literal: |- # XML label
+      <tag> test \" </tag>
+      <tag> test \" </tag>

@@ -1,0 +1,15 @@
+/*
+ * SPDX-FileCopyrightText: 2024 Eduardo Javier Alvarado Aarón <eduardo.javier.alvarado.aaron@gmail.com>
+ *
+ * SPDX-License-Identifier: Unlicense
+ */
+
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "Extension",
+		"type": "extensionHost",
+		"request": "launch",
+		"args": ["--extensionDevelopmentPath=${workspaceFolder}"]
+	}]
+}

@@ -1,0 +1,46 @@
+# SPDX-FileCopyrightText: 2024 Eduardo Javier Alvarado Aarón <eduardo.javier.alvarado.aaron@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+before-single = '<tag> text \" </tag>' # XML
+ after-single = '<tag> text \" </tag>'
+
+before-double = "<tag> text \" </tag>" # XML
+ after-double = "<tag> text \" </tag>"
+
+before-single-multi = '''
+	<tag> text \" </tag>
+''' # XML
+ after-single-multi = '''
+	<tag> text \" </tag>
+'''
+
+before-double-multi = """
+	<tag> text \" </tag>
+""" # XML
+ after-double-multi = """
+	<tag> text \" </tag>
+"""
+
+'single'.before   = '<tag/>' # XML
+'single'. "after" = '<tag/>' # XML
+ single.'after-2' = '<tag/>' # XML
+	'single-full' = '<tag/>'
+
+"double".before   = '<tag/>' # XML
+"double". 'after' = '<tag/>' # XML
+ double."after-2" = '<tag/>' # XML
+	"double-full" = '<tag/>'
+
+# XML (should target last field: `xml`)
+bool  = true # comment
+map   = { tag = '<tag/>' }
+array = [ # XML
+	'<tag/>',
+	'<tag/>', # XML
+	'<tag/>',
+]
+
+["double".table.'single']
+pi = 3.14
+xml = '<tag/>'

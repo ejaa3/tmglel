@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2024 Eduardo Javier Alvarado Aarón <eduardo.javier.alvarado.aaron@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+node_modules/
+syntaxes/
+target/
+
+Cargo.lock
+tmglel-*.vsix
+TMGLEL.toml
+package*

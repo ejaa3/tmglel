@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2024 Eduardo Javier Alvarado Aarón <eduardo.javier.alvarado.aaron@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+[package]
+name = 'tmglel'
+version = '0.1.0'
+edition = '2021'
+
+[dependencies]
+anyhow = '1'
+indoc = '2'
+serde = '1'
+serde_json = '1'
+toml = '0.8'
